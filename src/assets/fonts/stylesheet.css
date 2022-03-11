@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-Black.eot');
+    src: local('BR Firma Black'), local('BRFirma-Black'),
+        url('BRFirma-Black.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-Black.woff2') format('woff2'),
+        url('BRFirma-Black.woff') format('woff'),
+        url('BRFirma-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-Regular.eot');
+    src: local('BR Firma'), local('BRFirma-Regular'),
+        url('BRFirma-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-Regular.woff2') format('woff2'),
+        url('BRFirma-Regular.woff') format('woff'),
+        url('BRFirma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-BoldItalic.eot');
+    src: local('BR Firma Bold Italic'), local('BRFirma-BoldItalic'),
+        url('BRFirma-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-BoldItalic.woff2') format('woff2'),
+        url('BRFirma-BoldItalic.woff') format('woff'),
+        url('BRFirma-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma Extra';
+    src: url('BRFirma-ExtraLightItalic.eot');
+    src: local('BR Firma Extra Light Italic'), local('BRFirma-ExtraLightItalic'),
+        url('BRFirma-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-ExtraLightItalic.woff2') format('woff2'),
+        url('BRFirma-ExtraLightItalic.woff') format('woff'),
+        url('BRFirma-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-Thin.eot');
+    src: local('BR Firma Thin'), local('BRFirma-Thin'),
+        url('BRFirma-Thin.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-Thin.woff2') format('woff2'),
+        url('BRFirma-Thin.woff') format('woff'),
+        url('BRFirma-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma Semi';
+    src: url('BRFirma-SemiBoldItalic.eot');
+    src: local('BR Firma Semi Bold Italic'), local('BRFirma-SemiBoldItalic'),
+        url('BRFirma-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-SemiBoldItalic.woff2') format('woff2'),
+        url('BRFirma-SemiBoldItalic.woff') format('woff'),
+        url('BRFirma-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-ThinItalic.eot');
+    src: local('BR Firma Thin Italic'), local('BRFirma-ThinItalic'),
+        url('BRFirma-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-ThinItalic.woff2') format('woff2'),
+        url('BRFirma-ThinItalic.woff') format('woff'),
+        url('BRFirma-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-BlackItalic.eot');
+    src: local('BR Firma Black Italic'), local('BRFirma-BlackItalic'),
+        url('BRFirma-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-BlackItalic.woff2') format('woff2'),
+        url('BRFirma-BlackItalic.woff') format('woff'),
+        url('BRFirma-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma Semi';
+    src: url('BRFirma-SemiBold.eot');
+    src: local('BR Firma Semi Bold'), local('BRFirma-SemiBold'),
+        url('BRFirma-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-SemiBold.woff2') format('woff2'),
+        url('BRFirma-SemiBold.woff') format('woff'),
+        url('BRFirma-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-LightItalic.eot');
+    src: local('BR Firma Light Italic'), local('BRFirma-LightItalic'),
+        url('BRFirma-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-LightItalic.woff2') format('woff2'),
+        url('BRFirma-LightItalic.woff') format('woff'),
+        url('BRFirma-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-Light.eot');
+    src: local('BR Firma Light'), local('BRFirma-Light'),
+        url('BRFirma-Light.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-Light.woff2') format('woff2'),
+        url('BRFirma-Light.woff') format('woff'),
+        url('BRFirma-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-MediumItalic.eot');
+    src: local('BR Firma Medium Italic'), local('BRFirma-MediumItalic'),
+        url('BRFirma-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-MediumItalic.woff2') format('woff2'),
+        url('BRFirma-MediumItalic.woff') format('woff'),
+        url('BRFirma-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-Bold.eot');
+    src: local('BR Firma Bold'), local('BRFirma-Bold'),
+        url('BRFirma-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-Bold.woff2') format('woff2'),
+        url('BRFirma-Bold.woff') format('woff'),
+        url('BRFirma-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-Medium.eot');
+    src: local('BR Firma Medium'), local('BRFirma-Medium'),
+        url('BRFirma-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-Medium.woff2') format('woff2'),
+        url('BRFirma-Medium.woff') format('woff'),
+        url('BRFirma-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma Extra';
+    src: url('BRFirma-ExtraLight.eot');
+    src: local('BR Firma Extra Light'), local('BRFirma-ExtraLight'),
+        url('BRFirma-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-ExtraLight.woff2') format('woff2'),
+        url('BRFirma-ExtraLight.woff') format('woff'),
+        url('BRFirma-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BR Firma';
+    src: url('BRFirma-RegularItalic.eot');
+    src: local('BR Firma Italic'), local('BRFirma-RegularItalic'),
+        url('BRFirma-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('BRFirma-RegularItalic.woff2') format('woff2'),
+        url('BRFirma-RegularItalic.woff') format('woff'),
+        url('BRFirma-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
