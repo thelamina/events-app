@@ -4,20 +4,11 @@ import HomePage from "../pages/Home.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
+    name: "HomePage",
     component: HomePage,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../pages/About.vue"),
-  },
-  {
-    name: "not-found",
+    name: "PageNotFound",
     path: "/:pathMatch(.*)*",
     component: () => import("../pages/PageNotFound.vue"),
   },

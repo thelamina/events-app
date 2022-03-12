@@ -1,15 +1,17 @@
 <template>
   <Transition appear>
     <div class="block bg-white rounded-lg p-4 h-90 w-full m-auto">
-      <div class="">
+      <div class="h-48 w-full rounded-lg">
         <img
           alt="blog photo"
-          src="https://www.tailwind-kit.com/images/blog/1.jpg"
-          class="h-48 w-full object-cover rounded-lg"
+          src="https://s3-alpha-sig.figma.com/img/701f/35c8/00e7fc32f88b72c8260fb72502699785?Expires=1647820800&Signature=WtDS3HwU9ttvkRLZql8iUqbvrWN5s1o9UgS8-3N6HV11dsCJKf7o7l4kDUtoYZAefI5Wxc-Ytf9d4jleE~IKoktOr39O-OJDDjoBMGLVYeqTvP-6V~cysUXMv8wBut32F49Li~A-kKkXFKd0~ddhf4Zyl~smeUvDxiuTYZGtaYW5xLOy4rXfNUYc9qfr3HwQ-0PH5abU1FjNiV9AGto0oTHojQDpw6XXpvGadfvSzp-ecyEfNQsBepWoKAfx5ORd6ux06vWifNwx68Rs5~4in-968pcrf-ezZ24Ykg5Ewi9dtLr5ySvLSTLzYNfaEdgbYktbB6a2DXLVhucZA6c~fA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          class="w-full h-48 rounded-lg object-cover hover:skew-y-1 transition-all duration-500 ease-in-out origin-center"
         />
       </div>
       <div class="bg-white w-full mt-4">
-        <p class="text-[#2F2F2F] text-sm font-bold">{{ event.venue.name }}</p>
+        <p class="text-black text-sm text-left font-bold">
+          {{ props.event.venue.name }}
+        </p>
         <div class="flex flex-wrap justify-between w-full items-end mt-4">
           <div>
             <div class="flex flex-wrap">
@@ -36,8 +38,8 @@
                     />
                   </svg>
                 </span>
-                <p class="ml-3 text-sm text-[#6C757D]">
-                  {{ event.venue.city }}
+                <p class="ml-3 text-sm text-ash">
+                  {{ props.event.venue.city }}
                 </p>
               </div>
               <div class="flex items-center pb-3">
@@ -55,7 +57,7 @@
                     />
                   </svg>
                 </span>
-                <p class="ml-3 text-sm text-[#6C757D]">{{ date }}</p>
+                <p class="ml-3 text-sm text-ash">{{ formatDate }}</p>
               </div>
             </div>
             <div class="flex pb-2">
@@ -74,19 +76,19 @@
                     />
                   </svg>
                 </span>
-                <p class="ml-3 text-sm text-[#6C757D]">
+                <p class="ml-3 text-sm text-ash">
                   Starting from
-                  <span class="text-[#372AA4] text-base font-semibold">
-                    15,000
+                  <span class="text-primary text-base font-semibold">
+                    ₦ 15,000
                   </span>
                 </p>
               </div>
             </div>
           </div>
           <a
-            :href="event.url"
+            :href="props.event.url"
             target="_blank"
-            class="cursor-pointer text-base mr-2 py-3 px-5 text-[#372AA4] font-semibold border-2 border-[#372AA4] rounded-lg hover:text-white hover:bg-[#372AA4] transition-all duration-300 ease-in-out"
+            class="cursor-pointer text-base mr-2 py-3 px-5 text-primary font-semibold border-2 border-primary rounded-lg hover:text-white hover:bg-primary transition-all duration-300 ease-in-out"
           >
             Buy Ticket
           </a>
@@ -96,35 +98,20 @@
   </Transition>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script lang="ts" setup>
+import { IEvent } from "@/types";
+import { computed } from "vue";
 
-export default defineComponent({
-  name: "FeaturedEventCard",
-  props: {
-    event: {
-      type: Object,
-      required: true,
-    },
-  },
+const props = defineProps<{ event: IEvent }>();
 
-  data() {
-    return {
-      isLoading: false,
-    };
-  },
-
-  computed: {
-    date() {
-      return new Date(this.event.datetime)
-        .toLocaleDateString("en-GB", {
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })
-        .replace(/ /g, " ");
-    },
-  },
+const formatDate = computed(() => {
+  return new Date(props.event.datetime)
+    .toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    })
+    .replace(/ /g, " ");
 });
 </script>
 

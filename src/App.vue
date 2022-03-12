@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-[#F8F9FB] min-h-screen">
+  <main class="bg-light min-h-screen">
     <Navbar />
     <div>
       <router-view />
